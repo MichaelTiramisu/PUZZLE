@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="MHB-UY-Hzy">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Resource-->
+        <scene sceneID="VFT-JO-GiZ">
+            <objects>
+                <viewController id="NtD-ey-D3R" customClass="ResourceViewController" customModule="News" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="0zp-YF-gIQ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wYd-JV-EmX"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="UW5-lS-bZi">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="0V2-rL-eC2">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="UserCell" rowHeight="60" id="4kZ-ip-Hep" customClass="UserCell" customModule="News" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="60"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="4kZ-ip-Hep" id="I0R-Zk-d6C">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="59.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="headImage" translatesAutoresizingMaskIntoConstraints="NO" id="bb4-jr-awX">
+                                                    <rect key="frame" x="18" y="10" width="40" height="40"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="40" id="9cg-PJ-aD0"/>
+                                                        <constraint firstAttribute="height" constant="40" id="h8E-xu-mMi"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LRj-ad-aBI">
+                                                    <rect key="frame" x="78" y="10" width="45" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sie-bT-4SH">
+                                                    <rect key="frame" x="78" y="36" width="37" height="18"/>
+                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="LRj-ad-aBI" firstAttribute="top" secondItem="I0R-Zk-d6C" secondAttribute="top" constant="10" id="AFm-LC-P7x"/>
+                                                <constraint firstItem="bb4-jr-awX" firstAttribute="leading" secondItem="I0R-Zk-d6C" secondAttribute="leadingMargin" constant="10" id="Woz-84-zCi"/>
+                                                <constraint firstItem="bb4-jr-awX" firstAttribute="top" secondItem="I0R-Zk-d6C" secondAttribute="top" constant="10" id="Yti-SP-p1X"/>
+                                                <constraint firstItem="Sie-bT-4SH" firstAttribute="leading" secondItem="bb4-jr-awX" secondAttribute="trailing" constant="20" id="heG-ij-O0a"/>
+                                                <constraint firstItem="Sie-bT-4SH" firstAttribute="top" secondItem="LRj-ad-aBI" secondAttribute="bottom" constant="5" id="u8Z-fR-V69"/>
+                                                <constraint firstItem="LRj-ad-aBI" firstAttribute="leading" secondItem="bb4-jr-awX" secondAttribute="trailing" constant="20" id="yE5-ST-jhH"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="emailLabel" destination="Sie-bT-4SH" id="Oiz-o1-Pzo"/>
+                                            <outlet property="headImageView" destination="bb4-jr-awX" id="dSD-5j-DpU"/>
+                                            <outlet property="nameLabel" destination="LRj-ad-aBI" id="GLt-w1-qdw"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="0V2-rL-eC2" firstAttribute="leading" secondItem="UW5-lS-bZi" secondAttribute="leading" id="HWO-5y-Yus"/>
+                            <constraint firstItem="0V2-rL-eC2" firstAttribute="top" secondItem="UW5-lS-bZi" secondAttribute="top" id="IGN-xd-G7w"/>
+                            <constraint firstAttribute="bottom" secondItem="0V2-rL-eC2" secondAttribute="bottom" id="Kwp-LL-Pzc"/>
+                            <constraint firstAttribute="trailing" secondItem="0V2-rL-eC2" secondAttribute="trailing" id="N9R-us-MXZ"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Resource" id="SDn-Cq-eHE"/>
+                    <connections>
+                        <outlet property="tableView" destination="0V2-rL-eC2" id="KCl-4b-qJy"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BnR-yC-9qP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1367" y="-855"/>
+        </scene>
+        <!--Resource-->
+        <scene sceneID="JCG-L0-UId">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="MHB-UY-Hzy" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Resource" image="resources" id="XIV-7Q-SlX"/>
+                    <toolbarItems/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="prM-Wf-tev">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="NtD-ey-D3R" kind="relationship" relationship="rootViewController" id="F0Q-tk-efl"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gVM-CD-iKJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="302" y="-855"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="headImage" width="70" height="71"/>
+        <image name="resources" width="25" height="25"/>
+    </resources>
+</document>

@@ -1,0 +1,63 @@
+PODS:
+  - AFNetworking (3.1.0):
+    - AFNetworking/NSURLSession (= 3.1.0)
+    - AFNetworking/Reachability (= 3.1.0)
+    - AFNetworking/Security (= 3.1.0)
+    - AFNetworking/Serialization (= 3.1.0)
+    - AFNetworking/UIKit (= 3.1.0)
+  - AFNetworking/NSURLSession (3.1.0):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (3.1.0)
+  - AFNetworking/Security (3.1.0)
+  - AFNetworking/Serialization (3.1.0)
+  - AFNetworking/UIKit (3.1.0):
+    - AFNetworking/NSURLSession
+  - MSGraphSDK (0.10.1):
+    - MSGraphSDK/Common (= 0.10.1)
+    - MSGraphSDK/Extensions (= 0.10.1)
+    - MSGraphSDK/Implementations (= 0.10.1)
+    - MSGraphSDK/MSGraphCoreSDK (= 0.10.1)
+  - MSGraphSDK-NXOAuth2Adapter (0.9.2):
+    - MSGraphSDK-NXOAuth2Adapter/Auth (= 0.9.2)
+    - MSGraphSDK-NXOAuth2Adapter/Common (= 0.9.2)
+    - MSGraphSDK-NXOAuth2Adapter/Extensions (= 0.9.2)
+  - MSGraphSDK-NXOAuth2Adapter/Auth (0.9.2):
+    - MSGraphSDK-NXOAuth2Adapter/Common
+    - MSGraphSDK/Common
+    - MSGraphSDK/Implementations
+    - NXOAuth2Client (~> 1.2.8)
+  - MSGraphSDK-NXOAuth2Adapter/Common (0.9.2)
+  - MSGraphSDK-NXOAuth2Adapter/Extensions (0.9.2):
+    - MSGraphSDK-NXOAuth2Adapter/Common
+  - MSGraphSDK/Common (0.10.1)
+  - MSGraphSDK/Extensions (0.10.1):
+    - MSGraphSDK/Implementations
+    - MSGraphSDK/MSGraphCoreSDK
+  - MSGraphSDK/Implementations (0.10.1):
+    - MSGraphSDK/Common
+  - MSGraphSDK/MSGraphCoreSDK (0.10.1):
+    - MSGraphSDK/Common
+  - NXOAuth2Client (1.2.8)
+  - PageMenu (2.0.0)
+  - SnapKit (3.2.0)
+
+DEPENDENCIES:
+  - AFNetworking (~> 3.0)
+  - MSGraphSDK
+  - MSGraphSDK-NXOAuth2Adapter
+  - PageMenu (~> 2.0.0)
+  - SnapKit (~> 3.2.0)
+
+SPEC CHECKSUMS:
+  AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
+  MSGraphSDK: 3c43eb632ca969593f1bdd5612b573e436bd3283
+  MSGraphSDK-NXOAuth2Adapter: 2b6db8cc771d4f4f269091bc4280c405b3c3e4a4
+  NXOAuth2Client: 98c4d4c594edd2b289cfc34a8928653e1dab7adf
+  PageMenu: 9c38fd7e0d9ef4b1408320f55bb907bbc0e538dc
+  SnapKit: 1ca44df72cfa543218d177cb8aab029d10d86ea7
+
+PODFILE CHECKSUM: 63f0af882b64d2df608a67a89b4da7a7bedba0e1
+
+COCOAPODS: 1.3.1
